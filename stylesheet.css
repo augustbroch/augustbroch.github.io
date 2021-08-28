@@ -4,9 +4,13 @@ body
 }
 .container
 {
-
+    display:grid;
+	height:100vh;
+	grid-template-columns:1fr 400px 1fr;
+	grid-template-rows:72px 1fr 30px;
+    border: 1px solid black;
 }
 .title
 {
-
+    font-family:Arial, Helvetica, sans-serif;
 }
