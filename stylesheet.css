@@ -2,14 +2,22 @@ body
 {
     
 }
-.container
+
+#container
 {
     display:grid;
 	height:100vh;
-	grid-template-columns:1fr 400px 1fr;
-	grid-template-rows:72px 1fr 30px;
-    border: 1px solid black;
+	grid-template-columns:1fr 50% 1fr;
+	grid-template-rows:1fr 20% 1fr;
 }
+#header
+{
+    grid-column:2/3;
+	grid-row:2/3;
+    border: 5px solid black;
+    text-align:center;
+}
+
 .title
 {
     font-family:Arial, Helvetica, sans-serif;
