@@ -25,16 +25,19 @@ a.navBar {
 }
 
 img {
-  width: 80%;
-  height: 30%;
+  width: 25%;
+  height: auto;
 }
-.imgCenter {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
+
 .txtCenter {
   text-align: center;
+}
+.txtRight {
+  text-align: right;
+}
+
+.floatRight {
+  float: right;
 }
 
 #container {
@@ -49,7 +52,6 @@ img {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
-
   /* border: 1px solid black; */
 }
 #body {
