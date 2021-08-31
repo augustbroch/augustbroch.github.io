@@ -36,6 +36,9 @@ img {
   text-align: right;
 }
 
+.floatLeft {
+  float: left;
+}
 .floatRight {
   float: right;
 }
