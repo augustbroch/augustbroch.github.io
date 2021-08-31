@@ -32,8 +32,9 @@ img {
 .txtCenter {
   text-align: center;
 }
-.txtRight {
-  text-align: right;
+
+.subtitle {
+
 }
 
 .floatLeft {
@@ -49,24 +50,26 @@ img {
   grid-template-columns: 1fr 85% 1fr;
   grid-template-rows: 1fr 15% 1fr 15% 1fr;
 
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 #header {
   grid-column: 2/3;
   grid-row: 2/3;
   text-align: center;
-  /* border: 1px solid black; */
+
+  border: 1px solid black;
+  background: blueviolet;
 }
 #body {
   grid-column: 2/3;
   grid-row: 3/4;
 
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
 #footer {
   grid-column: 2/3;
   grid-row: 4/5;
   text-align: center;
 
-  /* border: 1px solid black; */
+  border: 1px solid black;
 }
