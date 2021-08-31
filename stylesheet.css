@@ -4,6 +4,9 @@ body {
   font-family: "Open Sans", sans-serif;
 }
 
+div.navBar {
+  display: inline-block;
+}
 ul.navBar {
   list-style-type: none;
   margin: 0;
