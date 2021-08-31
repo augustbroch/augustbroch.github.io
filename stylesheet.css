@@ -47,6 +47,15 @@ a.navBar {
   float: right;
 }
 
+a {
+  color: black;
+}
+
+a.no-decoration {
+  text-decoration: none;
+  color: black;
+}
+
 #container {
   display: grid;
   height: 100vh;
