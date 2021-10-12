@@ -27,6 +27,7 @@ a.navBar {
 .imgDriv {
   width: 25%;
   height: auto;
+  margin-left: 10px;
 }
 
 .txtCenter {
