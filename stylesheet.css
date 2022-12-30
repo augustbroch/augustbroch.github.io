@@ -37,15 +37,15 @@ a.navBar {
   text-align: right;
 }
 
-.subtitle {
-  /* TODO: Lag en undertittel som ligger på samme linje som navBar */
-}
-
 .floatLeft {
   float: left;
 }
 .floatRight {
   float: right;
+}
+
+.padding_left {
+  padding-left:20px;
 }
 
 a {
