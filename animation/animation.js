@@ -26,7 +26,7 @@ function start() {
     let last_name_replace = [0, 1, 2, 3, 4];
 
     /* Running clock */
-    setInterval(animate, 50);
+    let interval_id = setInterval(animate, 50);
 
     /* Var for html-text to be displayed in DOM element */
     let HTML_firstname = [];
@@ -36,8 +36,13 @@ function start() {
     let DOM_firstname = document.getElementById("txt_august");
     let DOM_lastname = document.getElementById("txt_broch");
 
+    // Function for stopping animation
+    function stop_animation() {
+        clearInterval(interval_id);
+    }
+
     /* Function doing the animations */
-    function animate() {
+    function animate(interval_id) {
         /* First animation: Print out my first and lastname, with random small/capital letters */
         if (clock < 6) {
             if (random_bool() === false) {
@@ -80,15 +85,6 @@ function start() {
         else if (clock < 15) {
             // Pick random element from the firstname replace array
             firstname_index = random_num(first_name_replace.length) - 1;
-            
-            
-            // Troubleshooting
-            /* console.log("clock: " + clock);
-            console.log("firstname_index: " + firstname_index);
-            console.log("first_name_replace: " + first_name_replace);
-            console.log("first_name_character: " + first_name[first_name_replace[firstname_index]]);
-            console.log("First name HTML:" + HTML_firstname);
-            console.log("======================================="); */
 
             // Replace letter with the correct one
             HTML_firstname.splice(first_name_replace[firstname_index], 1, first_name[first_name_replace[firstname_index]]);
@@ -102,14 +98,6 @@ function start() {
             if (clock < 14) { // Lastname only has 5 characters. Do the same as for firstname
                 lastname_index = random_num(last_name_replace.length) - 1;
 
-                console.log("clock: " + clock);
-                console.log("lastname_index: " + lastname_index);
-                console.log("last_name_replace: " + last_name_replace);
-                console.log("last_name_character: " + last_name[last_name_replace[lastname_index]]);
-                console.log("Last name HTML:" + HTML_lastname);
-                console.log("=======================================");
-                console.log(0);
-
                 HTML_lastname.splice(last_name_replace[lastname_index], 1, last_name[last_name_replace[lastname_index]]);
 
                 DOM_lastname.innerHTML = HTML_lastname.join("");
@@ -118,6 +106,7 @@ function start() {
             }
         } else {
             window.location = "home.html";
+            stop_animation();
         }
 
         clock += 1;
