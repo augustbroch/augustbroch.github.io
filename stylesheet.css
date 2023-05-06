@@ -17,8 +17,6 @@ li.navBar {
   float: left;
 }
 a.navBar {
-  display: block;
-  text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   color: #000000;
