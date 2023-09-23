@@ -1,0 +1,7 @@
+===== TODO augustbroch.no V1.4 =====
+  - Fix navbar to have equal top position on every page
+  - Fix footer to have same position on all pages, except when content exceeds webpage
+  
+Fluid design (might not happen until V1.5):
+  - Make navbar break text when displayed on mobile
+  - Make text bigger and readable. Dont waste limited mobile screen-space with huge empty space in top, sides and bottom of the page
