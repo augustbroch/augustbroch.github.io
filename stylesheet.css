@@ -27,6 +27,10 @@ a.navBar {
   height: auto;
   margin-left: 10px;
 }
+.imgHT {
+  width: 25%;
+  height: auto;
+}
 
 .txtCenter {
   text-align: center;
