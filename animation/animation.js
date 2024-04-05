@@ -26,7 +26,7 @@ function start() {
     let last_name_replace = [0, 1, 2, 3, 4];
 
     /* Running clock */
-    let interval_id = setInterval(animate, 50);
+    let interval_id = setInterval(animate, 60);
 
     /* Var for html-text to be displayed in DOM element */
     let HTML_firstname = [];
@@ -42,7 +42,7 @@ function start() {
     }
 
     /* Function doing the animations */
-    function animate(interval_id) {
+    function animate() {
         /* First animation: Print out my first and lastname, with random small/capital letters */
         if (clock < 6) {
             if (random_bool() === false) {

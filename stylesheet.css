@@ -63,7 +63,7 @@ a.no-decoration {
   display: grid;
   height: 100vh;
   grid-template-columns: 1fr 85% 1fr;
-  grid-template-rows: 0fr 15% 1fr 15% 1fr;
+  grid-template-rows: 0fr 15%;
 
   /* border: 1px solid black; */
 }
@@ -77,13 +77,6 @@ a.no-decoration {
 #body {
   grid-column: 2/3;
   grid-row: 3/4;
-
-  /* border: 1px solid black; */
-}
-#footer {
-  grid-column: 2/3;
-  grid-row: 4/5;
-  text-align: center;
 
   /* border: 1px solid black; */
 }
