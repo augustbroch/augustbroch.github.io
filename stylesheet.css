@@ -61,11 +61,7 @@ a.no-decoration {
 
 #container {
   display: grid;
-  height: 100vh;
   grid-template-columns: 1fr 85% 1fr;
-  grid-template-rows: 0fr 15%;
-
-  /* border: 1px solid black; */
 }
 #header {
   grid-column: 2/3;
@@ -77,6 +73,8 @@ a.no-decoration {
 #body {
   grid-column: 2/3;
   grid-row: 2/3;
+
+  padding-bottom:20px;
 
   /* border: 1px solid black; */
 }
