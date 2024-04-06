@@ -7,19 +7,33 @@ body {
 div.navBar {
   display: inline-block;
 }
+
 ul.navBar {
   list-style-type: none;
   margin: 0;
   padding: 0;
   overflow: hidden;
 }
+
 li.navBar {
   float: left;
 }
+
 a.navBar {
-  padding: 14px 16px;
+  margin: 14px 16px;
   text-decoration: none;
   color: #000000;
+}
+
+.subHeader {
+  text-align: right;
+}
+
+/* Hide if mobile */
+@media (max-width:700px) {
+  .subHeader {
+    display: none
+  }
 }
 
 .imgDriv {
@@ -27,6 +41,7 @@ a.navBar {
   height: auto;
   margin-left: 10px;
 }
+
 .imgHT {
   width: 25%;
   height: auto;
@@ -35,19 +50,17 @@ a.navBar {
 .txtCenter {
   text-align: center;
 }
-.txtRight {
-  text-align: right;
-}
 
 .floatLeft {
   float: left;
 }
+
 .floatRight {
   float: right;
 }
 
 .padding_left {
-  padding-left:20px;
+  padding-left: 20px;
 }
 
 a {
@@ -63,6 +76,7 @@ a.no-decoration {
   display: grid;
   grid-template-columns: 1fr 85% 1fr;
 }
+
 #header {
   grid-column: 2/3;
   grid-row: 1/2;
@@ -70,11 +84,12 @@ a.no-decoration {
 
   /* border: 1px solid black; */
 }
+
 #body {
   grid-column: 2/3;
   grid-row: 2/3;
 
-  padding-bottom:20px;
+  padding-bottom: 20px;
 
   /* border: 1px solid black; */
 }
